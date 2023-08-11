@@ -9,8 +9,6 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 code {
@@ -97,6 +95,22 @@ h2 {
   background: #1a8388;
   align-items: center;
   border-radius: 25px;
+}
+
+/* HomeLoggedIn */
+.home-logged-in {
+  margin-bottom: 25px;
+  margin-top: 25px;
+  text-align: center;
+}
+.home-logged-in button {
+  color: white;
+  background: #963553;
+  border-radius: 8px;
+  font-size: medium;
+  padding: 10px;
+  text-align: center;
+  font-weight: 600;
 }
 
 /* footer */
