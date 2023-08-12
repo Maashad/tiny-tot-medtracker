@@ -1,8 +1,8 @@
-import { Link } from 'react-router-dom';
-import './Navbar.css';
+import '../index.css';
+import { Link } from "react-router-dom";
 
-const Navbar = () => {
-    return (
+const NavBar = () => {
+    return (  
         <nav className="navbar">
             <h1>Tiny Tot MedTracker</h1>
             <div className="links">
@@ -12,7 +12,7 @@ const Navbar = () => {
                 <Link to="/log-in">Log In</Link>
             </div>
         </nav>
-    )
+    );
 };
 
-export default Navbar;
+export default NavBar;

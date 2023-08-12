@@ -1,8 +1,9 @@
 import './index.css';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Navbar from './components/Navbar';
+import HomeLoggedOut from './pages/HomeLoggedOut';
 import Footer from './components/Footer';
-import Home1 from './pages/home/Home1';
+import HomeLoggedIn from './pages/HomeLoggedIn';
 
 function App() {
   return (
@@ -12,12 +13,15 @@ function App() {
         <div className="content">
           <Switch>
             <Route exact path="/">
-              <Home1 />
+              <HomeLoggedOut />
+            </Route>
+            <Route exact path="/home-logged-in">
+              <HomeLoggedIn />
             </Route>
           </Switch>
         </div>
-        <Footer />
       </div>
+      <Footer />
     </Router>
   );
 }

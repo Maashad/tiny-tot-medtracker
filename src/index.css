@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
 body {
+  background-color: #152a57;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -6,11 +9,154 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* base styles */
+* {
+  margin: 0;
+  font-family: "Quicksand";
+  /* color: #333; */
+  color: white;
+  text-align: left;
+}
+
+.content {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 0px;
+}
+
+/* navbar */
+.navbar {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  max-width: 900px;
+  margin: 0 auto;
+  border-bottom: 1px solid #f2f2f2;
+}
+.navbar h1 {
+  /* color: #f1356d; */
+  /* color: #b51963; */
+  color: white;
+}
+.navbar .links {
+  margin-left: auto;
+  color: white;
+}
+.navbar a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+}
+.navbar a:hover {
+  /* color: #f1356d; */
+  color: #bf5531;
+}
+
+/* HomeLoggedOut - description */
+.home-logged-out {
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
+h2 {
+  font-size: 1.7rem;
+  font-weight: 600;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.description {
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  text-align: left auto;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0px;
+}
+
+.description:first-of-type {
+  margin-bottom: 25px;
+}
+
+#home-box {
+  width: 625px;
+	height: 400px;
+	margin: 10px;
+	padding: 10px;
+  background: #1a8388;
+  align-items: center;
+  border-radius: 25px;
+}
+
+/* HomeLoggedIn */
+.home-logged-in {
+  margin-bottom: 25px;
+  margin-top: 25px;
+  text-align: center;
+}
+.home-logged-in button {
+  color: white;
+  background: #963553;
+  border-radius: 8px;
+  font-size: medium;
+  padding: 10px;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* footer */
+.footer {
+  margin-top: auto;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  border-top: 1px solid #f2f2f2;
+}
+.footer h4 {
+  margin-right: auto;
+  /* color: #b51963; */
+  color: white;
+}
+
+.footer .contact {
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+}
+.footer a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+  color: white;
+}
+.footer a:hover {
+  /* color: #b51963; */
+  color: #bf5531;
+}
+
+
+/* box */
+/* color: "white",
+backgroundColor: "#f1356d",
+borderRadius: "8px" */
+
+
+/* color palette:
+#963553 - dark red
+#bf5531 - orange
+#1a8388 - teal
+#347aad - blue
+#152a57 - dark blue
+#d9d8db - light grey */
+
