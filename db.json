@@ -11,6 +11,10 @@
     {
       "name": "Liam",
       "id": 3
+    },
+    {
+      "name": "Ethan",
+      "id": 4
     }
   ],
   "medications": [
@@ -44,6 +48,13 @@
       "dose": 7.5,
       "child_id": 1,
       "id": 4
+    },
+    {
+      "name": "Tylenol",
+      "frequency": null,
+      "dose": 7.5,
+      "child_id": 3,
+      "id": 5
     }
   ]
 }
