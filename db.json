@@ -1,0 +1,49 @@
+{
+  "children": [
+    {
+      "id": 1,
+      "name": "Ava"
+    },
+    {
+      "id": 2,
+      "name": "Noah"
+    },
+    {
+      "name": "Liam",
+      "id": 3
+    }
+  ],
+  "medications": [
+    {
+      "id": 1,
+      "name": "Motrin",
+      "dose": 7.5,
+      "frequency": 8,
+      "child_id": 1,
+      "timestamps": []
+    },
+    {
+      "id": 2,
+      "name": "Tylenol",
+      "dose": 5,
+      "frequency": 6,
+      "child_id": 2,
+      "timestamps": []
+    },
+    {
+      "name": "Tylenol",
+      "frequency": 4,
+      "dose": 5,
+      "child_id": 3,
+      "id": 3,
+      "timestamps": []
+    },
+    {
+      "name": "Tylenol",
+      "frequency": null,
+      "dose": 7.5,
+      "child_id": 1,
+      "id": 4
+    }
+  ]
+}

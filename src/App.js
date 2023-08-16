@@ -1,29 +1,53 @@
-import './index.css';
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
+import { BrowserRouter as Router, Route, Switch} from 'react-router-dom'
+import { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
-import HomeLoggedOut from './pages/HomeLoggedOut';
 import Footer from './components/Footer';
-import HomeLoggedIn from './pages/HomeLoggedIn';
+
+import Home from './pages/Home';
+import ParentPortal from './pages/ParentPortal';
+import ChildList from './components/ChildList';
+import AddChild from './pages/AddChild';
+import AddMedication from './pages/AddMedication';
+import About from './pages/About'
+
+// styles
+import './index.css';
 
 function App() {
   return (
     <Router>
       <div className="App">
-        <Navbar />
-        <div className="content">
-          <Switch>
-            <Route exact path="/">
-              <HomeLoggedOut />
-            </Route>
-            <Route exact path="/home-logged-in">
-              <HomeLoggedIn />
-            </Route>
-          </Switch>
-        </div>
+          <Navbar />
+          <div className="content">
+            <Switch>
+              <Route exact path="/">
+                <Home />
+              </Route>
+              <Route exact path="/about">
+                <About />
+              </Route>
+              <Route exact path="/parent-portal">
+                <ParentPortal />
+              </Route>
+              <Route exact path="/add-child">
+                <AddChild />
+              </Route>
+              <Route exact path="/add-medication">
+                <AddMedication />
+              </Route>
+              <Route exact path="/child/:id">
+                <ChildList />
+              </Route>
+            </Switch>
+          </div>
+          <Footer />
       </div>
-      <Footer />
     </Router>
   );
 }
 
 export default App;
+
+// heroku postgres/api:
+// https://git.heroku.com/tiny-tot-medtracker.git

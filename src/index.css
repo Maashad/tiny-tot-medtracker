@@ -39,10 +39,9 @@ code {
   max-width: 900px;
   margin: 0 auto;
   border-bottom: 1px solid #f2f2f2;
+  position:relative;
 }
 .navbar h1 {
-  /* color: #f1356d; */
-  /* color: #b51963; */
   color: white;
 }
 .navbar .links {
@@ -55,12 +54,28 @@ code {
   padding: 6px;
 }
 .navbar a:hover {
-  /* color: #f1356d; */
+  color: #bf5531;
+}
+.navbar-button {
+  /* background: none;
+  border: none; */
+  color: white;
+  margin-left: 16px;
+  /* text-decoration: none; */
+  padding: 6px;
+  cursor: pointer;
+  font-family: "Quicksand";
+  display: inline-block;
+  /* transition: color 0.3s; */
+}
+
+.navbar-button:hover {
   color: #bf5531;
 }
 
-/* HomeLoggedOut - description */
-.home-logged-out {
+
+/* Home - description */
+.home {
   margin-bottom: 25px;
   margin-top: 25px;
 }
@@ -70,6 +85,7 @@ h2 {
   font-weight: 600;
   margin-bottom: 25px;
   text-align: center;
+  position: relative;
 }
 
 .description {
@@ -81,6 +97,7 @@ h2 {
   max-width: 600px;
   margin: 0 auto;
   padding: 0px;
+  position: relative;
 }
 
 .description:first-of-type {
@@ -95,15 +112,21 @@ h2 {
   background: #1a8388;
   align-items: center;
   border-radius: 25px;
+  position: relative;
 }
 
-/* HomeLoggedIn */
-.home-logged-in {
+
+/* ParentPortal */
+.parent-portal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 25px;
   margin-top: 25px;
   text-align: center;
+  padding: 0 25px;
 }
-.home-logged-in button {
+.add-button {
   color: white;
   background: #963553;
   border-radius: 8px;
@@ -112,6 +135,72 @@ h2 {
   text-align: center;
   font-weight: 600;
 }
+
+/* add child form */
+.add-child label {
+  text-align: left;
+  display: block;
+  font-size: 20px;
+}
+.add-child h2 {
+  font-size: 25px;
+  color: white;
+  margin-bottom: 30px;
+}
+.add-child input {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+  color: black;
+  font-size: 20px;
+}
+
+.add-child button {
+  background: #963553;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 25px;
+  font-size: 20px;
+}
+
+
+/* add medication form */
+.add-medication label {
+  text-align: left;
+  display: block;
+  font-size: 20px;
+}
+.add-medication h2 {
+  font-size: 25px;
+  color: white;
+  margin-bottom: 30px;
+}
+.add-medication input, .add-medication select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+  color: black;
+}
+.add-medication button {
+  background: #963553;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 25px;
+  font-size: 20px;
+}
+
 
 /* footer */
 .footer {
@@ -122,6 +211,7 @@ h2 {
   max-width: 600px;
   margin: 0 auto;
   border-top: 1px solid #f2f2f2;
+  position: relative;
 }
 .footer h4 {
   margin-right: auto;
@@ -144,19 +234,3 @@ h2 {
   /* color: #b51963; */
   color: #bf5531;
 }
-
-
-/* box */
-/* color: "white",
-backgroundColor: "#f1356d",
-borderRadius: "8px" */
-
-
-/* color palette:
-#963553 - dark red
-#bf5531 - orange
-#1a8388 - teal
-#347aad - blue
-#152a57 - dark blue
-#d9d8db - light grey */
-
