@@ -37,20 +37,20 @@ const ParentPortal = (e) => {
 
     return (
         <div className="parent-portal">
+            <div className="button-container">
+                <button onClick={handleClickAddChild} className="common-button add-button">Add Child</button>
+                <button onClick={handleClickAddMedication} className="common-button add-button">Add Medication</button>
+            </div>
+        <div className="children-buttons">
             {children.map(child => (
-                <div key={child.id} className="button-container">
-                    <button onClick={() => handleClickChild(child.id)} className="add-button">
+                <div key={child.id}>
+                    <button onClick={() => handleClickChild(child.id)} className="common-button add-button">
                         {child.name}
                     </button>
                 </div>
             ))}
-            <div className="button-container">
-                <button onClick={handleClickAddChild} className="add-button">Add Child</button>
-            </div>
-            <div className="button-container">
-                <button onClick={handleClickAddMedication} className="add-button">Add Medication</button>
-            </div>
         </div>
+    </div>
     );
 };
 

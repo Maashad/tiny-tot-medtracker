@@ -119,22 +119,47 @@ h2 {
 /* ParentPortal */
 .parent-portal {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  /* justify-content: space-between; */
   align-items: center;
   margin-bottom: 25px;
   margin-top: 25px;
   text-align: center;
   padding: 0 25px;
 }
-.add-button {
-  color: white;
-  background: #963553;
-  border-radius: 8px;
-  font-size: medium;
-  padding: 10px;
-  text-align: center;
-  font-weight: 600;
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
 }
+.children-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.common-button {
+    color: white;
+    background: #963553;
+    border-radius: 8px;
+    font-size: medium;
+    padding: 10px;
+    text-align: center;
+    font-weight: 600;
+    cursor: pointer; 
+    border: none;
+    margin-bottom: 25px;
+    /* outline: none; */
+    /* transition: background-color 0.3s ease; */
+}
+
+.common-button:hover {
+    background: #b0466e;  /* A slightly lighter shade for hover. Modify this as per your requirement */
+}
+
 
 /* add child form */
 .add-child label {

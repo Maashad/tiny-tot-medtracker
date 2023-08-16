@@ -47,14 +47,16 @@
       "frequency": null,
       "dose": 7.5,
       "child_id": 1,
-      "id": 4
+      "id": 4,
+      "timestamps": []
     },
     {
       "name": "Tylenol",
       "frequency": null,
       "dose": 7.5,
       "child_id": 3,
-      "id": 5
+      "id": 5,
+      "timestamps": []
     }
   ]
 }
