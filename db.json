@@ -24,7 +24,9 @@
       "dose": 7.5,
       "frequency": 8,
       "child_id": 1,
-      "timestamps": []
+      "timestamps": [
+        "2023-08-16T21:51:25.590Z"
+      ]
     },
     {
       "id": 2,
@@ -32,7 +34,9 @@
       "dose": 5,
       "frequency": 6,
       "child_id": 2,
-      "timestamps": []
+      "timestamps": [
+        "2023-08-16T21:51:31.627Z"
+      ]
     },
     {
       "name": "Tylenol",
@@ -48,7 +52,9 @@
       "dose": 7.5,
       "child_id": 1,
       "id": 4,
-      "timestamps": []
+      "timestamps": [
+        "2023-08-16T21:51:27.086Z"
+      ]
     },
     {
       "name": "Tylenol",

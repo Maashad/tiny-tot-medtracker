@@ -56,13 +56,13 @@ const ChildList = () => {
         <div className="child-list">
             <h2>{child && child.name}</h2>
             {medications.map(medication => (
-                <button key={medication.id} onClick={() => handleClickMedication(medication.id)}>
+                <button key={medication.id} className="common-button medication-button" onClick={() => handleClickMedication(medication.id)}>
                 {medication.name}
                 </button>
             ))}
             
             <div>
-                <button onClick={() => history.push("/parent-portal")}>Back</button>
+                <button className="back-button" onClick={() => history.push("/parent-portal")}>Back</button>
             </div>
         </div>
     );
