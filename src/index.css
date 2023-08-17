@@ -20,7 +20,6 @@ code {
 * {
   margin: 0;
   font-family: "Quicksand";
-  /* color: #333; */
   color: white;
   text-align: left;
 }
@@ -73,6 +72,10 @@ code {
   border: none;
   font-family: "Quicksand";
   font-size: 16px;
+  cursor: pointer;
+}
+.navbar-button:hover > button {
+  color:#bf5531
 }
 
 
@@ -141,7 +144,6 @@ h2 {
 }
 .common-button {
     color: white;
-    /* background: #963553; */
     background: #1a8388;
     border-radius: 8px;
     font-size: medium;
