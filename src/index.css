@@ -31,6 +31,7 @@ code {
   padding: 0px;
 }
 
+
 /* navbar */
 .navbar {
   padding: 20px;
@@ -63,30 +64,24 @@ code {
   display: inline-block;
   font-family: "Quicksand";
 }
-/* .navbar-button {
-  background: none;
-  background-color: transparent;
-  color: white;
-  margin-left: 16px;
-  border: none;
-  /* text-decoration: none; */
-  /* padding: 0px; */
-  /* cursor: pointer; */
-  /* font-family: "Quicksand"; */
-  /* display: inline-block; */
-  /* transition: color 0.3s; */
-/* } */ */
 .navbar-button:hover {
   color: #bf5531;
 }
+/* target child of navbar-button (login button) */
+.navbar-button > button {
+  background: none;
+  border: none;
+  font-family: "Quicksand";
+  font-size: 16px;
+}
 
 
-/* Home - description */
+
+/* Home - content */
 .home {
   margin-bottom: 25px;
   margin-top: 25px;
 }
-
 h2 {
   font-size: 1.7rem;
   font-weight: 600;
@@ -94,7 +89,6 @@ h2 {
   text-align: center;
   position: relative;
 }
-
 .description {
   font-size: 1.3rem;
   font-weight: 400;
@@ -106,11 +100,9 @@ h2 {
   padding: 0px;
   position: relative;
 }
-
 .description:first-of-type {
   margin-bottom: 25px;
 }
-
 #home-box {
   width: 625px;
 	height: 400px;
@@ -127,7 +119,6 @@ h2 {
 .parent-portal {
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
   align-items: center;
   margin-bottom: 25px;
   margin-top: 25px;
@@ -160,10 +151,7 @@ h2 {
     cursor: pointer; 
     border: none;
     margin-bottom: 25px;
-    /* outline: none; */
-    /* transition: background-color 0.3s ease; */
 }
-
 .common-button:hover {
     background: #963553;  /* A slightly lighter shade for hover. Modify this as per your requirement */
 }
@@ -190,7 +178,6 @@ h2 {
   color: black;
   font-size: 20px;
 }
-
 .add-child button {
   background: #963553;
   color: #fff;
@@ -199,7 +186,7 @@ h2 {
   border-radius: 8px;
   cursor: pointer;
   margin-top: 25px;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 
@@ -231,7 +218,7 @@ h2 {
   border-radius: 8px;
   cursor: pointer;
   margin-top: 25px;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 
@@ -273,7 +260,6 @@ h2 {
   /* color: #b51963; */
   color: white;
 }
-
 .footer .contact {
   margin-left: auto;
   margin-right: auto;
