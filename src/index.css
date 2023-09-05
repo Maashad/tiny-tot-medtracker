@@ -79,7 +79,6 @@ code {
 }
 
 
-
 /* Home - content */
 .home {
   margin-bottom: 25px;
@@ -153,6 +152,7 @@ h2 {
     cursor: pointer; 
     border: none;
     margin-bottom: 25px;
+    width: 150px;
 }
 .common-button:hover {
     background: #963553;  /* A slightly lighter shade for hover. Modify this as per your requirement */
