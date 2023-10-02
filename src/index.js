@@ -6,15 +6,15 @@ import { Auth0Provider } from "@auth0/auth0-react";
 import App from './App';
 import './index.css';
 
+const domain = process.env.REACT_APP_AUTH0_DOMAIN;
+const clientID = process.env.REACT_APP_AUTH0_CLIENT_ID;
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <Auth0Provider
-  domain="yellow-leaf-1598.us.auth0.com"
-  clientId="DR5e1BKmVZM1EuMvJlZg8QFTu25FKFQX"
-  authorizationParams={{
-    redirect_uri: "https://tiny-tot-medtracker.onrender.com/parent-portal"
-  }}
+    domain={domain}
+    clientId={clientID}
+    redirectUri={"https://tiny-tot-medtracker.onrender.com/parent-portal"}
   >
     <App />
   </Auth0Provider>,
