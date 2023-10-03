@@ -7,16 +7,16 @@ import LogoutButton from './LogoutButton';
 const Navbar = () => {
     const { isAuthenticated } = useAuth0();
 
-
     return (  
         <nav className="navbar">
             <h1>Tiny Tot MedTracker</h1>
             <div className="links">
                 <Link to="/">Home</Link>
-                <Link to="/parent-portal">Parent Portal</Link>
-                
-                {!isAuthenticated && <LoginButton className="navbar-button" />}
-                {isAuthenticated && <LogoutButton className="navbar-button" />}
+                <LoginButton />
+                {isAuthenticated &&
+                    <Link to="/parent-portal">Parent Portal</Link>}
+                <LogoutButton />
+
 
                 {/* {isAuthenticated && 
                     <div className="dropdown-content">
