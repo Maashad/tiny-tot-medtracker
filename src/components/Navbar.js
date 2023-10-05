@@ -16,15 +16,6 @@ const Navbar = () => {
                 {isAuthenticated &&
                     <Link to="/parent-portal">Parent Portal</Link>}
                 <LogoutButton />
-
-
-                {/* {isAuthenticated && 
-                    <div className="dropdown-content">
-                        {childrenNames.map((name, index) => (
-                            <Link key={index} to={`/child/${name.toLowerCase()}`}>{name}</Link>
-                        ))}
-                    </div>
-                } */}
             </div>
         </nav>
     );
