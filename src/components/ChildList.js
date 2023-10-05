@@ -9,13 +9,15 @@ const ChildList = () => {
     const [medications, setMedications] = useState([]);
 
     useEffect(() => {
-        fetch(`http://localhost:8000/children/${id}`)
+        // fetch(`http://localhost:8000/children/${id}`)
+        fetch(`https://tiny-tot-medtracker-backend.onrender.com/child_api/children/${id}`)
         .then(res => res.json())
         .then(data => {
             setChild(data);
         });
 
-        fetch(`http://localhost:8000/medications?child_id=${id}`)
+        // fetch(`http://localhost:8000/medications?child_id=${id}`)
+        fetch(`https://tiny-tot-medtracker-backend.onrender.com/medication_api/medications?child_id=${id}`)
         .then(res => res.json())
         .then(data => {
             setMedications(data);
@@ -28,7 +30,8 @@ const ChildList = () => {
     const updatedTimestamps = medicationId.timestamps ? [...medicationId.timestamps, now] : [now];
 
     // update medication with new timestamp
-    await fetch(`http://localhost:8000/medications/${medicationId}`, {
+    // await fetch(`http://localhost:8000/medications/${medicationId}`, {
+    await fetch(`https://tiny-tot-medtracker-backend.onrender.com/medication_api/medications/${medicationId}`, {
         method: "PATCH",
         headers: {
         "Content-Type": "application/json"
@@ -37,7 +40,8 @@ const ChildList = () => {
         });
 
         // refresh medication list
-        const response = await fetch(`http://localhost:8000/medications?child_id=${id}`);
+        // const response = await fetch(`http://localhost:8000/medications?child_id=${id}`);
+        const response = await fetch(`https://tiny-tot-medtracker-backend.onrender.com/medication_api/medications?child_id=${id}`);
         const meds = await response.json();
         setMedications(meds);
     };

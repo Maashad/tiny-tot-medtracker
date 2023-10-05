@@ -26,7 +26,8 @@ const ParentPortal = (e) => {
     };
 
     useEffect(() => {
-        fetch("http://localhost:8000/children")
+        // fetch("http://localhost:8000/children")
+        fetch('https://tiny-tot-medtracker-backend.onrender.com/child_api/children')
             .then(res => {
                 return res.json();
             })

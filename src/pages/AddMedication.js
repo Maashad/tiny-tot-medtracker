@@ -25,7 +25,8 @@ const AddMedication = () => {
             child_id: parseInt(selectedChild)
         };
 
-        fetch("http://localhost:8000/medications", {
+        // fetch("http://localhost:8000/medications", {
+        fetch("https://tiny-tot-medtracker-backend.onrender.com/medication_api/medications", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
@@ -47,7 +48,8 @@ const AddMedication = () => {
     };
 
     useEffect(() => {
-        fetch("http://localhost:8000/children")
+        // fetch("http://localhost:8000/children")
+        fetch("https://tiny-tot-medtracker-backend.onrender.com/child_api/children")
             .then(res => res.json())
             .then(data => {
                 setChildren(data);

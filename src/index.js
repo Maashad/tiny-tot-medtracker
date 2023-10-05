@@ -14,9 +14,7 @@ root.render(
       domain={domain}
       clientId={clientId}
       authorizationParams={{
-        redirect_uri: "https://tiny-tot-medtracker.onrender.com/parent-portal",
-        // redirect_uri: `${window.location.origin}/parent-portal`,
-        // redirect_uri: window.location.origin,
+        redirect_uri: `${window.location.origin}/parent-portal`,
       }}
       >
         {/* {console.log(`${window.location.origin}/parent-portal`)} */}

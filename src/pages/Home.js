@@ -12,9 +12,6 @@ const Home = () => {
             <p className="description">
             With an emphasis on simplicity, Tiny Tot ensures that you can efficiently monitor your child's medication intake without the distraction of unnecessary features. We want to make your life easier so you can focus on what matters most: your child.
             </p>
-            {/* <p className="start-links">
-                <a href="/sign-up">Sign Up</a> or <a href="/log-in">Log In</a> to get started!
-            </p> */}
         </div>
     );
 }

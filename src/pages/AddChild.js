@@ -8,7 +8,8 @@ const AddChild = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         const child = { name: childName };
-        fetch("http://localhost:8000/children", {
+        // fetch("http://localhost:8000/children", {
+        fetch("https://tiny-tot-medtracker-backend.onrender.com/child_api/children", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
